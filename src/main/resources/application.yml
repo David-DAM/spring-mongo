@@ -1,3 +1,6 @@
 spring:
   application:
     name: spring-mongo
+  mongodb:
+    database: finance
+    uri: mongodb://localhost:27017/?retryWrites=true&directConnection=false&readPreference=primary
