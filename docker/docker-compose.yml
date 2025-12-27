@@ -2,9 +2,6 @@ version: "3.9"
 
 services:
 
-  # =========================
-  # CONFIG SERVER
-  # =========================
   configsvr:
     image: mongo:8.2
     container_name: mongo-config
@@ -15,9 +12,6 @@ services:
     volumes:
       - configdb:/data/configdb
 
-  # =========================
-  # SHARD 1
-  # =========================
   shard1:
     image: mongo:8.2
     container_name: mongo-shard1
@@ -28,9 +22,6 @@ services:
     volumes:
       - shard1:/data/db
 
-  # =========================
-  # SHARD 2
-  # =========================
   shard2:
     image: mongo:8.2
     container_name: mongo-shard2
@@ -41,9 +32,6 @@ services:
     volumes:
       - shard2:/data/db
 
-  # =========================
-  # MONGO INIT JOB
-  # =========================
   mongo-init:
     image: mongo:8.2
     container_name: mongo-init
@@ -56,9 +44,6 @@ services:
       - ./mongo-init:/scripts
     entrypoint: [ "bash", "/scripts/init.sh" ]
 
-  # =========================
-  # MONGOS ROUTER
-  # =========================
   mongos:
     image: mongo:8.2
     container_name: mongo-mongos
