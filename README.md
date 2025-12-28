@@ -3,7 +3,7 @@
 Proyecto de demostración de **Spring Boot 4.0** con **MongoDB Sharded Cluster** para el manejo de eventos financieros en
 tiempo real.
 
-## 🛠️ Tecnologías
+## Tecnologías
 
 - **Java 25**
 - **Spring Boot 4.0.1**
@@ -14,7 +14,7 @@ tiempo real.
 - **Spring Boot Actuator**
 - **Docker** (para el clúster de MongoDB)
 
-## 🚀 Arquitectura MongoDB
+## Arquitectura MongoDB
 
 Este proyecto implementa un **clúster de MongoDB con sharding** que incluye:
 
@@ -45,13 +45,13 @@ y USD.
 Escucha cambios en la colección `events` en tiempo real usando MongoDB Change Streams con soporte para **Resume Tokens
 ** (recuperación ante fallos).
 
-## 📋 Requisitos Previos
+## Requisitos Previos
 
 - Java 25+
 - Docker & Docker Compose
 - Maven 3.9+
 
-## 🏃 Ejecución
+## Ejecución
 
 ### 1. Iniciar el clúster de MongoDB
 
@@ -86,6 +86,6 @@ Endpoints disponibles:
 - `/actuator/info` - Información de la aplicación
 - `/actuator/metrics` - Métricas
 
-## 📝 Licencia
+## Licencia
 
 Este proyecto es de demostración y uso educativo.
