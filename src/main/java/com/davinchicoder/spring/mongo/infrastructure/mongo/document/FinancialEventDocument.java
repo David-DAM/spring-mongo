@@ -1,7 +1,8 @@
-package com.davinchicoder.spring.mongo.infrastructure.document;
+package com.davinchicoder.spring.mongo.infrastructure.mongo.document;
 
 import com.davinchicoder.spring.mongo.domain.EventType;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.geo.GeoJsonPoint;
@@ -16,17 +17,17 @@ import java.time.Instant;
 @CompoundIndexes({
         @CompoundIndex(name = "currency_time_idx", def = "{'currencyId': 1, 'timestamp': 1}")
 })
+@EqualsAndHashCode(callSuper = true)
 @Data
-public class FinancialEventDocument {
+public class FinancialEventDocument extends BaseDocument {
 
     @Id
     private ObjectId id;
-
     private String currencyId;
     private Instant timestamp;
     private BigDecimal price;
     private EventType type;
-
     private GeoJsonPoint source;
 
 }
+

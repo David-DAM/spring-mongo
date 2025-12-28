@@ -1,8 +1,8 @@
-package com.davinchicoder.spring.mongo.infrastructure.repository;
+package com.davinchicoder.spring.mongo.infrastructure.mongo.repository.financial_event;
 
 import com.davinchicoder.spring.mongo.domain.FinancialEvent;
-import com.davinchicoder.spring.mongo.infrastructure.document.FinancialEventDocument;
-import com.davinchicoder.spring.mongo.infrastructure.mapper.FinancialEventMapper;
+import com.davinchicoder.spring.mongo.infrastructure.mongo.document.FinancialEventDocument;
+import com.davinchicoder.spring.mongo.infrastructure.mongo.mapper.FinancialEventMapper;
 import lombok.RequiredArgsConstructor;
 import org.bson.types.ObjectId;
 import org.springframework.stereotype.Repository;

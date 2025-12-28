@@ -1,6 +1,4 @@
-package com.davinchicoder.spring.mongo.infrastructure.controller;
-
-import com.davinchicoder.spring.mongo.domain.EventType;
+package com.davinchicoder.spring.mongo.infrastructure.api;
 
 import java.math.BigDecimal;
 import java.time.Instant;
@@ -11,7 +9,6 @@ public record FinancialEventDto(
         String currencyId,
         Instant timestamp,
         BigDecimal price,
-        EventType type,
         List<Double> source
 ) {
 }

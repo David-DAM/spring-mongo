@@ -1,8 +1,7 @@
-package com.davinchicoder.spring.mongo.infrastructure.mapper;
+package com.davinchicoder.spring.mongo.infrastructure.mongo.mapper;
 
 import com.davinchicoder.spring.mongo.domain.FinancialEvent;
-import com.davinchicoder.spring.mongo.infrastructure.controller.FinancialEventDto;
-import com.davinchicoder.spring.mongo.infrastructure.document.FinancialEventDocument;
+import com.davinchicoder.spring.mongo.infrastructure.mongo.document.FinancialEventDocument;
 import org.bson.types.ObjectId;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingConstants;
@@ -17,8 +16,6 @@ public interface FinancialEventMapper {
     FinancialEventDocument toDocument(FinancialEvent event);
 
     FinancialEvent toDomain(FinancialEventDocument document);
-
-    FinancialEventDto toDto(FinancialEvent event);
 
     default ObjectId toObjectId(String id) {
         return id == null ? null : new ObjectId(id);

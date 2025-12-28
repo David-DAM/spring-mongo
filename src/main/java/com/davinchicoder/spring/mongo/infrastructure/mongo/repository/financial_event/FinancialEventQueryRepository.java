@@ -1,6 +1,6 @@
-package com.davinchicoder.spring.mongo.infrastructure.repository;
+package com.davinchicoder.spring.mongo.infrastructure.mongo.repository.financial_event;
 
-import com.davinchicoder.spring.mongo.infrastructure.document.FinancialEventDocument;
+import com.davinchicoder.spring.mongo.infrastructure.mongo.document.FinancialEventDocument;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;

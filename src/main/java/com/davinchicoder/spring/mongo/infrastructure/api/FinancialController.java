@@ -1,7 +1,6 @@
-package com.davinchicoder.spring.mongo.infrastructure.controller;
+package com.davinchicoder.spring.mongo.infrastructure.api;
 
-import com.davinchicoder.spring.mongo.infrastructure.mapper.FinancialEventMapper;
-import com.davinchicoder.spring.mongo.infrastructure.repository.FinancialEventRepository;
+import com.davinchicoder.spring.mongo.infrastructure.mongo.repository.financial_event.FinancialEventRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,7 +16,7 @@ import java.util.List;
 public class FinancialController {
 
     private final FinancialEventRepository repository;
-    private final FinancialEventMapper mapper;
+    private final FinancialApiMapper mapper;
 
     @GetMapping
     public ResponseEntity<List<FinancialEventDto>> getAllFinancialEvents() {

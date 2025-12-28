@@ -2,7 +2,7 @@ package com.davinchicoder.spring.mongo.infrastructure.scheduler;
 
 import com.davinchicoder.spring.mongo.domain.EventType;
 import com.davinchicoder.spring.mongo.domain.FinancialEvent;
-import com.davinchicoder.spring.mongo.infrastructure.repository.FinancialEventRepository;
+import com.davinchicoder.spring.mongo.infrastructure.mongo.repository.financial_event.FinancialEventRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;
