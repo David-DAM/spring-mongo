@@ -33,7 +33,7 @@ Este proyecto implementa un **clúster de MongoDB con sharding** que incluye:
     - `EUR` → Shard1 (Zona EU)
     - `USD` → Shard2 (Zona US)
 
-## ⚙Características
+## Características
 
 ### 1. Carga de Eventos Financieros (Scheduler)
 
